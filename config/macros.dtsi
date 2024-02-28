@@ -40,8 +40,8 @@
     label = "macro_leftScreen";
     #binding-cells = <0>;
     bindings = <&macro_press &kp LGUI &kp RCTRL>
-             , <$macro_tap $kp LEFT>
-             , <$macro_release &kp RCTRL &kp LGUI>;
+             , <&macro_tap &kp LEFT>
+             , <&macro_release &kp RCTRL &kp LGUI>;
   };
 
   macro_rightScreen: macro_rightScreen {
@@ -49,6 +49,6 @@
     label = "macro_rightScreen";
     #binding-cells = <0>;
     bindings = <&macro_press &kp LGUI &kp RCTRL>
-             , <$macro_tap $kp RIGHT>
-             , <$macro_release &kp RCTRL &kp LGUI>;
+             , <&macro_tap &kp RIGHT>
+             , <&macro_release &kp RCTRL &kp LGUI>;
   };
