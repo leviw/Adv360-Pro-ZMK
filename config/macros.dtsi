@@ -34,3 +34,21 @@
     #binding-cells = <0>;
     bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
   };
+
+  macro_leftScreen: macro_leftScreen {
+    compatible = "zmk,behavior-macro";
+    label = "macro_leftScreen";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LGUI &kp RCTRL>
+             , <$macro_tap $kp LEFT>
+             , <$macro_release &kp RCTRL &kp LGUI>;
+  };
+
+  macro_rightScreen: macro_rightScreen {
+    compatible = "zmk,behavior-macro";
+    label = "macro_rightScreen";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LGUI &kp RCTRL>
+             , <$macro_tap $kp RIGHT>
+             , <$macro_release &kp RCTRL &kp LGUI>;
+  };
